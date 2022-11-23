@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-sizing : border-box;
+}
+
+body{
+    background-image: linear-gradient(170deg, #000000, #0B003F);
+ 	color: #AFAFAF;
+	font-family :"Poppins", sans-serif;
+	min-height: 100vh;
+}
+
+header{
+	font-size: 1.5rem;
+}
+header, form{
+	min-height: 20vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+form input, form button{
+	padding: 0.5rem;
+	font-size: 2rem;
+	border: none;
+	background: white;
+}
+
+form button{
+	color: #0B003F;
+	background-color: white;
+	transition: all 0.6s ease;
+	
+}
+form button:hover{
+	color: white;
+	background-color: #0B003F;
+	cursor: pointer;
+	
+}
+
+.todo-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todo-list{
+	min-width: 30%;
+	list-style: none;
+	
+}
+
+.todo{
+	background: white;
+	color: black;
+	margin: 0.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 1.5s ease;
+}
+
+.todo li{
+	flex: 1;
+}
+
+.todo-item{
+	padding: 0rem 0.5rem;
+}
+
+.complete-btn{
+	background: #0B003F;
+	color: white;
+	padding: 1rem;
+	font-size: 1rem;
+	border: none;
+	cursor: pointer;
+}
+
+.trash-btn{
+	background: #939393;
+	color: white;
+	padding: 1rem;	
+	font-size: 1rem;
+	border: none;
+	cursor: pointer;
+}
+.fa-check, .fa-trash{
+	pointer-events: none;
+}
+
+.completed{
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.fall{
+	transform: translateY(3rem) rotateZ(10deg);
+	opacity: 0.5;
+}
+
+select{
+	color: #001051;
+	width: 10rem;
+	cursor: pointer;
+	padding: 1rem;
+	font-size: 0.87rem;
+	background-color: white;
+	font-family: "Poppins", sans-serif;
+	padding: 1rem;
+	
+}
+
+select{
+	border: none;
+	outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.select{
+	margin: 2rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.select::after{
+	content: "\25BC";
+	position: absolute;
+	background: #001051;
+	top: 0;
+	right: 0;
+	padding: 1rem;
+	pointer-events: none;
+	transition: all 1.5s ease;
+}
+
+
+.search-bar {
+    padding: 0.5rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+    border:none;
+    background: white;
+}
